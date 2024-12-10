@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="match" type="comparator"/>
+        <field name="value" type="nrtext" 
+            label="NR_ARTICLE" 
+            description="NR_ARTICLES_DESC"
+            hint="Enter comma separated ids"
+        />
+    </fieldset>
+</form>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.7.0" group="fields" method="upgrade">
+	<name>ACF_VIDEO</name>
+	<description>ACF_VIDEO_DESC</description>
+	<author>Tassos Marinos</author>
+	<creationDate>August 2023</creationDate>
+	<copyright>Copyright (C) 2019 Tassos Marinos. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>www.tassos.gr</authorUrl>
+	<version>1.0</version>
+	<scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename plugin="acfvideo">acfvideo.php</filename>
+		<filename>script.install.helper.php</filename>
+		<filename>version.php</filename>
+		<folder>fields</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/nrframework/fields">
+				<field name="enable_previewer" type="nrtoggle"
+					label="ACF_VIDEO_ENABLE_PREVIEWER"
+					description="ACF_VIDEO_ENABLE_PREVIEWER_DESC"
+					checked="true"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+    <media folder="media" destination="plg_fields_acfvideo">
+        <folder>img</folder>
+    </media>
+</extension>

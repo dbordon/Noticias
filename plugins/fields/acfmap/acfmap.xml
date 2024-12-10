@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="plugin" version="3.7.0" group="fields" method="upgrade">
+	<name>ACF_MAP</name>
+	<description>ACF_MAP_DESC</description>
+	<author>Tassos Marinos</author>
+	<creationDate>May 2023</creationDate>
+	<copyright>Copyright (C) 2023 Tassos Marinos. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@tassos.gr</authorEmail>
+	<authorUrl>www.tassos.gr</authorUrl>
+	<version>1.0</version>
+	<scriptfile>script.install.php</scriptfile>
+	<files>
+		<filename plugin="acfmap">acfmap.php</filename>
+		<filename>script.install.helper.php</filename>
+		<filename>version.php</filename>
+		<folder>language</folder>
+		<folder>params</folder>
+		<folder>tmpl</folder>
+		<folder>fields</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/nrframework/fields">
+				<field name="openstreetmap_key" type="nrtext"
+					label="ACF_MAP_OPENSTREETMAP_APIKEY"
+					description="ACF_MAP_OPENSTREETMAP_APIKEY_DESC"
+					urltext="ACF_MAP_OPENSTREETMAP_APIKEY_GET"
+					url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields/docs/the-map-field#get_osm_arcgis_key"
+					class="span5"
+				/>
+				<field name="googlemap_key" type="nrtext"
+					label="ACF_MAP_GOOGLEMAP_APIKEY"
+					description="ACF_MAP_GOOGLEMAP_APIKEY_DESC"
+					urltext="ACF_MAP_GOOGLEMAP_APIKEY_GET"
+					url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields/docs/the-map-field#get_googlemap_key"
+					class="span5"
+				/>
+				<field name="bingmap_key" type="nrtext"
+					label="ACF_MAP_BINGMAP_APIKEY"
+					description="ACF_MAP_BINGMAP_APIKEY_DESC"
+					urltext="ACF_MAP_BINGMAP_APIKEY_GET"
+					url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields/docs/the-map-field#get_bingmap_key"
+					class="span5"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+	<media folder="media" destination="plg_fields_acfmap">
+        <folder>img</folder>
+    </media>
+</extension>

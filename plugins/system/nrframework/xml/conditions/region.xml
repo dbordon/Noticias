@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="match" type="comparator"/>
+        <field name="value" type="nrtext"
+            label="NR_REGION"
+            descrtipion="NR_CONDITION_REGION_DESC"
+            hint="GB-LND, DE-BE"
+            class="input-xlarge"
+            url="https://en.wikipedia.org/wiki/ISO_3166-2"
+            urltext="Find a Region Code"
+        />
+    </fieldset>
+</form>

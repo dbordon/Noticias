@@ -1,0 +1,27 @@
+/*
+ * @package   akeebabackup
+ * @copyright Copyright (c)2006-2023 Nicholas K. Dionysopoulos / Akeeba Ltd
+ * @license   GNU General Public License version 3, or later
+ */
+
+/**
+ * Integrated restoration
+ */
+#extprogress {
+  border: thin solid $grey;
+  background-color: $light-grey;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+
+  .extlabel {
+    display: inline-block;
+    min-width: 300px;
+    font-weight: bold;
+  }
+
+  .extprogrow {
+    border-bottom: thin solid lighten($teal, 10%);
+  }
+}

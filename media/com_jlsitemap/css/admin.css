@@ -1,0 +1,20 @@
+/*
+ * @package    JLSitemap Component
+ * @version    2.0.0
+ * @author     Joomline - joomline.ru
+ * @copyright  Copyright (c) 2010 - 2022 Joomline. All rights reserved.
+ * @license    GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ * @link       https://joomline.ru/
+ */
+
+#controlPanel .action svg {
+	stroke: currentcolor;
+	fill: currentcolor;
+	height: 80px;
+}
+
+.shadow-hover:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    transition: all .3s ease-in-out;
+    z-index: 1015;
+}

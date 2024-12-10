@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="match" type="comparator"/>
+        <field name="value" type="nr_content" 
+            label="NR_CATEGORIES" 
+            description="NR_CATEGORIES_DESC"
+            group="categories" 
+            multiple="true" 
+        />
+        <fields name="params">
+            <field name="inc_children" type="list"
+                default="0"
+                label="NR_ALSO_ON_CHILD_ITEMS"
+                description="NR_ALSO_ON_CHILD_ITEMS_DESC"
+                class="input-small">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+                <option value="2">NR_ONLY</option>
+            </field>
+            <field name="view_single" type="list"
+                default="1"
+                label="NR_ARTICLE_VIEW"
+                description="NR_ARTICLE_VIEW_DESC"
+                class="input-small">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+            <field name="view_category" type="list"
+                default="0"
+                label="NR_CATEGORY_VIEW"
+                description="NR_ARTICLE_VIEW_DESC"
+                class="input-small">
+                <option value="0">JNO</option>
+                <option value="1">JYES</option>
+            </field>
+        </fields>
+    </fieldset>
+</form>

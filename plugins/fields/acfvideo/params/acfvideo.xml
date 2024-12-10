@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field name="provider" type="NRImagesSelector"
+				images='[
+					{
+						"key": "YouTube",
+						"label": "YouTube",
+						"url": "https://www.tassos.gr/images/apps/youtube.png"
+					},
+					{
+						"key": "Vimeo",
+						"label": "Vimeo",
+						"url": "https://www.tassos.gr/images/apps/vimeo.png"
+					},
+					{
+						"key": "FacebookVideo",
+						"label": "Facebook Video",
+						"url": "https://www.tassos.gr/images/apps/facebook.png"
+					},
+					{
+						"key": "Dailymotion",
+						"label": "Dailymotion",
+						"url": "https://www.tassos.gr/images/apps/dailymotion.png"
+					},
+					{
+						"key": "SelfHostedVideo",
+						"label": "ACF_VIDEO_SELF_HOSTED_VIDEO",
+						"url": "https://www.tassos.gr/images/icons/Video.svg"
+					}
+				]'
+				columns="5"
+				width="850px"
+				image_width="90px"
+				key_type="filename"
+				label="ACF_VIDEO_PROVIDER"
+				description="ACF_VIDEO_PROVIDER_DESC"
+				default="YouTube"
+				mode="links"
+			/>
+			<field name="width" type="NRResponsiveControl"
+				class="is-one-line"
+				label="ACF_VIDEO_WIDTH"
+				description="ACF_VIDEO_WIDTH_DESC"
+				default='{"desktop":{"value":"480","unit":"px"}}'
+				subtype="TFUnitControl"
+				subtype_hint="480"
+			/>
+			<field name="height" type="NRResponsiveControl"
+				class="is-one-line"
+				label="ACF_VIDEO_HEIGHT"
+				description="ACF_VIDEO_HEIGHT_DESC"
+				default='{"desktop":{"value":"270", "unit":"px"}}'
+				subtype="TFUnitControl"
+				subtype_hint="270"
+				subtype_units="px,%,auto"
+				showon="provider!:FacebookVideo"
+			/>
+			
+			<field name="selfhostedvideo_autoplay" type="nrtoggle"
+		        label="ACF_VIDEO_AUTOPLAY"
+				description="ACF_VIDEO_AUTOPLAY_DESC"
+				showon="provider:SelfHostedVideo"
+			/>
+		    <field name="selfhostedvideo_controls" type="nrtoggle"
+		        label="ACF_VIDEO_CONTROLS"
+				description="ACF_VIDEO_CONTROLS_DESC"
+				checked="true"
+				showon="provider:SelfHostedVideo"
+			/>
+		    <field name="selfhostedvideo_loop" type="nrtoggle"
+		        label="ACF_VIDEO_LOOP"
+				description="ACF_VIDEO_LOOP_DESC"
+				showon="provider:SelfHostedVideo"
+			/>
+			<field name="selfhostedvideo_mute" type="nrtoggle"
+				label="ACF_VIDEO_MUTE"
+				description="ACF_VIDEO_MUTE_DESC"
+				showon="provider:SelfHostedVideo"
+			/>
+			
+		    <field name="@autoplay" type="nr_pro"
+				label="ACF_VIDEO_AUTOPLAY"
+				description="ACF_VIDEO_AUTOPLAY_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo,FacebookVideo"
+			/>
+		    <field name="@autopause" type="nr_pro"
+				label="ACF_VIDEO_AUTOPAUSE"
+				description="ACF_VIDEO_AUTOPAUSE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo,FacebookVideo,Dailymotion,SelfHostedVideo"
+			/>
+			<field name="@fs" type="nr_pro"
+				label="ACF_VIDEO_FULLSCREEN"
+				description="ACF_VIDEO_FULLSCREEN_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,FacebookVideo"
+			/>
+			<field name="@controls" type="nr_pro"
+				label="ACF_VIDEO_CONTROLS"
+				description="ACF_VIDEO_CONTROLS_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo"
+			/>
+			<field name="@loop" type="nr_pro"
+				label="ACF_VIDEO_LOOP"
+				description="ACF_VIDEO_LOOP_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider!:Dailymotion,FacebookVideo,SelfHostedVideo"
+			/>
+			<field name="@mute" type="nr_pro"
+				label="ACF_VIDEO_MUTE"
+				description="ACF_VIDEO_MUTE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider!:Dailymotion,SelfHostedVideo"
+			/>
+			<field name="@disablekb" type="nr_pro"
+				label="ACF_VIDEO_DISABLE_KEYBOARD"
+				description="ACF_VIDEO_DISABLE_KEYBOARD_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo"
+			/>
+			<field name="@start" type="nr_pro"
+				label="ACF_VIDEO_START"
+				description="ACF_VIDEO_START_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo,Dailymotion"
+			/>
+			<field name="@end" type="nr_pro"
+				label="ACF_VIDEO_END"
+				description="ACF_VIDEO_END_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo,Dailymotion"
+			/>
+			
+
+			<!-- Providers Labels -->
+            <field type="spacer" name="yt_label"
+				label="ACF_VIDEO_YOUTUBE"
+				class="acf"
+				showon="provider:YouTube"
+			/>
+            <field type="spacer" name="vimeo_label"
+				label="ACF_VIDEO_VIMEO"
+				class="acf"
+				showon="provider:Vimeo"
+			/>
+            <field type="spacer" name="fb_label"
+				label="ACF_VIDEO_FACEBOOK"
+				class="acf"
+				showon="provider:FacebookVideo"
+			/>
+            <field type="spacer" name="selfhosted_label"
+				label="ACF_VIDEO_SELF_HOSTED_VIDEO"
+				class="acf"
+				showon="provider:SelfHostedVideo"
+			/>
+
+			<!-- YouTube Specific Params -->
+			
+		    <field name="privacyMode" type="nrtoggle"
+		        label="ACF_VIDEO_PRIVACY_MODE"
+				description="ACF_VIDEO_PRIVACY_MODE_DESC"
+				showon="provider:YouTube,Vimeo"
+			/>
+
+			<!-- Vimeo Specific Params -->
+			
+
+			<!-- Facebook Specific Params -->
+			
+
+			
+			<!-- YouTube -->
+			<field name="@cc_load_policy" type="nr_pro"
+				label="ACF_VIDEO_CLOSED_CAPTIONS"
+				description="ACF_VIDEO_CLOSED_CAPTIONS_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube"
+			/>
+			<field name="@modestbranding" type="nr_pro"
+				label="ACF_VIDEO_MODESTBRANDING"
+				description="ACF_VIDEO_MODESTBRANDING_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube"
+			/>
+			<field name="@rel" type="nr_pro"
+				label="ACF_VIDEO_REL"
+				description="ACF_VIDEO_REL_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube"
+			/>
+			<field name="@youtube_color" type="nr_pro"
+				label="ACF_VIDEO_COLOR"
+				description="ACF_VIDEO_COLOR_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube"
+			/>
+
+			<!-- Vimeo -->
+			<field name="@title" type="nr_pro"
+				label="ACF_VIDEO_TITLE"
+				description="ACF_VIDEO_TITLE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:Vimeo"
+			/>
+			<field name="@byline" type="nr_pro"
+				label="ACF_VIDEO_BYLINE"
+				description="ACF_VIDEO_BYLINE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:Vimeo"
+			/>
+			<field name="@portrait" type="nr_pro"
+				label="ACF_VIDEO_PORTRAIT"
+				description="ACF_VIDEO_PORTRAIT_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:Vimeo"
+			/>
+			<field name="@pip" type="nr_pro"
+				label="ACF_VIDEO_PIP"
+				description="ACF_VIDEO_PIP_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:Vimeo"
+			/>
+			<field name="@vimeo_color" type="nr_pro"
+				label="ACF_VIDEO_VIMEO_COLOR"
+				description="ACF_VIDEO_VIMEO_COLOR_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:Vimeo"
+			/>
+
+			<!-- Facebook Video -->
+			<field name="@show_text" type="nr_pro"
+		        label="ACF_VIDEO_FACEBOOKVIDEO_INCLUDEPOST"
+				description="ACF_VIDEO_FACEBOOKVIDEO_INCLUDEPOST_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:FacebookVideo"
+			/>
+			<field name="@show_captions" type="nr_pro"
+		        label="ACF_VIDEO_FACEBOOKVIDEO_SHOWCAPTIONS"
+				description="ACF_VIDEO_FACEBOOKVIDEO_SHOWCAPTIONS_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:FacebookVideo"
+			/>
+			
+
+			<!-- Self Hosted Video -->
+		    <field name="preload" type="list" 
+		        label="ACF_PRELOAD"
+				description="ACF_PRELOAD_DESC"
+		        default="auto"
+				showon="provider:SelfHostedVideo">
+		            <option value="metadata">ACF_METADATA</option>
+		            <option value="auto">NR_AUTO</option>
+		            <option value="none">JNONE</option>
+		    </field>
+
+			<!-- Cover Image -->
+            <field type="spacer" name="cover_image_label"
+				label="ACF_VIDEO_COVER_IMAGE"
+				showon="provider:YouTube,Vimeo,Dailymotion"
+				class="acf"
+			/>
+			
+			
+			<field name="@coverImageType" type="nr_pro"
+				label="ACF_VIDEO_COVER_IMAGE_TYPE"
+				description="ACF_VIDEO_COVER_IMAGE_TYPE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+				showon="provider:YouTube,Vimeo,Dailymotion"
+			/>
+			
+		</fieldset>
+	</fields>
+</form>

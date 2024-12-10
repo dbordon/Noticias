@@ -1,0 +1,52 @@
+/*
+ * @package   akeebabackup
+ * @copyright Copyright (c)2006-2023 Nicholas K. Dionysopoulos / Akeeba Ltd
+ * @license   GNU General Public License version 3, or later
+ */
+
+@use "sass:color";
+
+/**
+ * Form styling fixes
+ */
+.akeeba-renderer-fef {
+  div.akeeba-hidden-fields-container {
+    height: 0;
+  }
+
+  form[class*=--with-hidden] {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Breadcrumbs
+ */
+ul.akeeba-breadcrumb {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .75rem 1rem;
+  list-style: none;
+  color: lighten($grey, 20%);
+
+  li {
+    display: inline-block;
+
+    a {
+      color: $grey;
+      text-decoration: none;
+
+      &:hover {
+        color: $teal;
+        text-decoration: none;
+      }
+    }
+
+    span.divider {
+      display: inline-block;
+      padding: 0 0.5em;
+      color: lighten($grey, 20%);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+/*!
+ * @package   akeebabackup
+ * @copyright Copyright (c)2006-2023 Nicholas K. Dionysopoulos / Akeeba Ltd
+ * @license   GNU General Public License version 3, or later
+ */
+
+@import 'sources/variables';
+
+// Component icon
+@import 'sources/title_icon.scss';
+
+// Joomla style overrides
+@import 'sources/joomla';
+
+// Features to backport to FEF
+@import 'sources/fef_backports';
+
+// Changelog
+@import 'sources/changelog';
+
+// Configuration page
+@import "sources/configuration";
+
+// Backup progress
+@import "sources/backup";
+
+// Filesystem filters
+@import "sources/fsfilters";
+
+// Database table filters
+@import "sources/dbfilters";
+
+// Additional Database and Off-Site Folder Inclusion
+@import "sources/extradb";
+
+// Integrated restoration
+@import "sources/restoration";
+
+// Manage backups
+@import "sources/manage";
+
+// (S)FTP folder browser
+@import "sources/sftpbrowser";

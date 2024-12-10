@@ -1,0 +1,67 @@
+/*
+ * @package   akeebabackup
+ * @copyright Copyright (c)2006-2023 Nicholas K. Dionysopoulos / Akeeba Ltd
+ * @license   GNU General Public License version 3, or later
+ */
+
+@use "sass:color";
+
+/**
+ * Configuration page
+ **/
+div.akeeba-config-area-container {
+  border: thin solid color.scale($light-grey, $lightness: -20%);
+  background: $light-grey;
+  border-radius: 0.3em;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.joomla-version-3 {
+  form[class*="akeeba-form--configuration"] input,
+  form[class*="akeeba-form--horizontal"] input,
+  form[class*="akeeba-form--horizontal"] textarea {
+    width: inherit !important;
+  }
+}
+
+.joomla-version-4 {
+  form[class*="akeeba-form--configuration"] {
+    .akeeba-form-group {
+      margin-bottom: 0.6em;
+    }
+
+    input, select {
+      background: $white;
+    }
+  }
+}
+
+.akeeba-renderer-fef {
+  form[class*="akeeba-form--configuration"] {
+    .akeeba-form-group {
+      input[type=checkbox] {
+        margin-top: 0.5em;
+      }
+    }
+
+    .akeeba-input-group {
+      > span.akeeba-input-group-btn:last-child {
+        button {
+          padding: 0.3em 0.3em 0.3em 0.9em;
+          margin: 0;
+        }
+      }
+    }
+
+    input.akeeba-form-input-mini,
+    select.akeeba-form-input-mini {
+      max-width: 7em;
+    }
+
+    input.akeeba-form-input-small,
+    select.akeeba-form-input-small {
+      max-width: 15em;
+    }
+  }
+}

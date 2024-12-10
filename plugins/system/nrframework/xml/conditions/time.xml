@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="match" type="comparator"/>
+        <fields name="params">
+            <field name="publish_up" type="nr_time" 
+                label="NR_START_TIME"
+                description="NR_START_PUBLISHING_TIMERANGE_DESC"
+            />
+            <field name="publish_down" type="nr_time" 
+                label="NR_END_TIME"
+                description="NR_FINISH_PUBLISHING_TIMERANGE_DESC"
+            />
+        </fields>
+    </fieldset>
+</form>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fields>
+    <field name="email" 
+        label="Email"
+        description="Safely display email addresses in the front-end that are unreadbable to spambots."
+        doc="the-email-field"
+    />
+    <field name="gravatar" 
+        doc="the-gravatar-field"
+    />
+    <field name="country"
+        doc="the-country-field"
+    />
+    <field name="currency"
+        doc="the-currency-field"
+    />
+    <field name="url"
+        doc="the-url-field"
+    />
+    <field name="convertforms"
+        doc="the-convert-forms-field"
+    />
+    <field name="soundcloud"
+        doc="the-soundcloud-field"
+    />
+    <field name="telephone"
+        doc="the-telephone-field"
+    />
+    <field name="iframe"
+        doc="the-iframe-field"
+    />
+    <field name="progressbar"
+        doc="the-progress-bar-field"
+    />
+    <field name="truefalse"
+        doc="the-true-false-field"
+    />
+    <field name="timepicker"
+        doc="the-timepicker-field"
+    />
+    <field name="downloadbutton"
+        doc="the-download-button-field"
+    />
+    <field name="html5audio"
+        doc="the-html5-audio-field"
+    />
+    <field name="qrcode"
+        doc="the-qr-code-field"
+    />
+    <field name="whatsappctc"
+        doc="the-whatsapp-click-to-chat-field"
+    />
+    <field name="facebook"
+        doc="the-facebook-field"
+    />
+    <field name="twitter"
+        doc="the-twitter-field"
+    />
+    <field name="map"
+        doc="the-map-field"
+    />
+    <field name="video"
+        doc="the-video-field"
+    />
+    <!-- 
+        Note: Always set a fixed value in the Label and Description properties of 
+        the Pro only fields as the Free version doesn't include them at all, 
+        ending up with untranslated language strings
+    -->
+    <field name="address"
+        label="Address Autocomplete"
+        description="Display a map with location details such as address, country, city, postal code, state, etc..."
+        proonly="true"
+        doc="acf-address-field-get-instant-address-details"
+    />
+    <field name="gallery"
+        label="Gallery"
+        description="Create image galleries to share group of pictures on your site."
+        proonly="true"
+        doc="the-gallery-field"
+    />
+    <field name="upload"
+        label="File Upload"
+        description="Upload any file using a drag &amp; drop file uploader in the back-end and display the uploaded file as a link or image in the front-end."
+        proonly="true"
+        doc="how-to-add-a-file-upload-field-in-joomla-forms"
+    />
+    <field name="module"
+        label="Module Loader"
+        description="Select any existing Joomla! Module in the back-end and render it in the front-end."
+        proonly="true"
+        doc="the-module-field"
+    />
+    <field name="php"
+        label="PHP"
+        description="Execute PHP in a Joomla! Custom Field and display a dynamic value in the front-end."
+        proonly="true"
+        doc="how-to-run-php-code-in-a-joomla-custom-field"
+    />
+    <field name="paypal"
+        label="PayPal"
+        description="Accept donations, allow your shoppers to buy products or subscribe to your services with the PayPal button."
+        proonly="true"
+        doc="joomla-paypal-custom-field"
+    />
+    <field name="chainedfields"
+        label="Chained Fields"
+        description="Create select fields that dynamically change based on the previous selection."
+        proonly="true"
+        doc="create-chained-selects"
+    />
+    <field name="countdown"
+        label="Countdown"
+        description="Use a countdown timer to create anticipation and scarcity around upcoming events, creating the feeling of scarcity, anticipation, and drive more sales."
+        proonly="true"
+        doc="how-to-add-a-countdown-timer-field"
+    />
+    <field name="articles"
+        label="Articles"
+        description="Select and connect articles to each other."
+        proonly="true"
+        doc="articles"
+    />
+    <field name="faq"
+        label="FAQ"
+        description="Add a Frequently Asked Questions section to your site."
+        proonly="true"
+        doc="create-faq-section-joomla"
+    />
+</fields>

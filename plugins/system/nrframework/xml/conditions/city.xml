@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="general">
+        <field name="match" type="comparator"/>
+        <field name="value" type="nrtext"
+            label="NR_CITY_NAME"
+            description="NR_CONDITION_CITY_DESC"
+            hint="Athens, Berlin, Paris"
+            class="input-xlarge"
+            url="https://en.wikipedia.org/wiki/Lists_of_cities_in_Europe"
+            urltext="Find a City name"
+        />
+    </fieldset>
+</form>

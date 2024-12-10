@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="acf_options" label="ACF_ACF_OPTIONS">
+            <field name="acf_custom_css" type="editor"
+                label="ACF_CUSTOM_CSS"
+                description="ACF_CUSTOM_CSS_DESC"
+				editor="codemirror"
+				filter="raw"
+            />
+            <field name="acf_layout_override" type="ACFFieldLayoutOverrides"
+                label="ACF_WIDGET_LAYOUT"
+                description="ACF_FIELD_LAYOUT_OVERRIDES"
+            />
+        </fieldset>
+    </fields>
+</form>

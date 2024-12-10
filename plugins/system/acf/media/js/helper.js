@@ -1,0 +1,2 @@
+!function(window,document){"use strict";var helper={asyncScript:function(js_script){document.addEventListener("DOMContentLoaded",function(){window.addEventListener("load",function(){eval(js_script)})})},lazyloadIframes:function(){document.querySelectorAll("iframe.lazyload[data-src]").forEach(function(t){t.setAttribute("src",t.getAttribute("data-src")),t.removeAttribute("data-src")})}};window.ACFHelper=helper}(window,document);
+

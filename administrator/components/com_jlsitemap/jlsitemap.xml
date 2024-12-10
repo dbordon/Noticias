@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+	<name>COM_JLSITEMAP</name>
+	<author>Joomline</author>
+	<creationDate>02.10.2024</creationDate>
+	<copyright>Copyright (c) 2010 - 2024 Joomline. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>sale@joomline.ru</authorEmail>
+	<authorUrl>https://joomline.ru/</authorUrl>
+	<version>2.0.0</version>
+	<description>COM_JLSITEMAP_DESCRIPTION</description>
+	<namespace path="src">Joomla\Component\JLSitemap</namespace>
+	<scriptfile>script.php</scriptfile>
+	<files folder="site">
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/com_jlsitemap.ini</language>
+		<language tag="en-GB">language/en-GB/com_jlsitemap.sys.ini</language>
+		<language tag="ru-RU">language/ru-RU/com_jlsitemap.ini</language>
+		<language tag="ru-RU">language/ru-RU/com_jlsitemap.sys.ini</language>
+	</languages>
+	<administration>
+		<menu>COM_JLSITEMAP</menu>
+		<files folder="admin">
+			<folder>services</folder>
+			<folder>src</folder>
+			<folder>tmpl</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/com_jlsitemap.ini</language>
+			<language tag="en-GB">language/en-GB/com_jlsitemap.sys.ini</language>
+			<language tag="ru-RU">language/ru-RU/com_jlsitemap.ini</language>
+			<language tag="ru-RU">language/ru-RU/com_jlsitemap.sys.ini</language>
+		</languages>
+	</administration>
+	<media destination="com_jlsitemap" folder="media">
+		<folder>css</folder>
+		<folder>icons</folder>
+	</media>
+	<layouts destination="components/jlsitemap" folder="layouts">
+		<folder>admin</folder>
+		<folder>site</folder>
+		<folder>xsl</folder>
+	</layouts>
+</extension>

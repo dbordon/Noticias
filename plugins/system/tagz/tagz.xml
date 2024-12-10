@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="system" method="upgrade">
+    <name>System - TAGZ Open Graph</name>
+    <creationDate>September 12 2021</creationDate>
+    <author>roosterz.nl</author>
+    <authorEmail>roy@roosterz.nl</authorEmail>
+    <authorUrl>www.roosterz.nl</authorUrl>
+    <copyright>Copyright 2014-2021 roosterz.nl</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <version>4.0.5 FREE</version>
+    <files>
+        <filename plugin="tagz">tagz.php</filename>
+        <filename>index.html</filename>
+    </files>
+
+</extension>

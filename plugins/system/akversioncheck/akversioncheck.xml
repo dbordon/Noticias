@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--~
+  ~ @package   akeebabackup
+  ~ @copyright Copyright (c)2006-2023 Nicholas K. Dionysopoulos / Akeeba Ltd
+  ~ @license   GNU General Public License version 3, or later
+  -->
+
+<extension version="3.8.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_AKVERSIONCHECK</name>
+	<author>Nicholas K. Dionysopoulos</author>
+	<authorEmail>nicholas@dionysopoulos.me</authorEmail>
+	<authorUrl>https://www.akeeba.com</authorUrl>
+	<copyright>Copyright (c)2006-2023 Nicholas K. Dionysopoulos</copyright>
+	<license>GNU General Public License version 3, or later</license>
+	<creationDate>2024-09-23</creationDate>
+	<version>8.4.0</version>
+	<description>PLG_SYSTEM_AKVERSIONCHECK_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="akversioncheck">akversioncheck.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_akversioncheck.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_akversioncheck.sys.ini</language>
+	</languages>
+
+	<scriptfile>script.php</scriptfile>
+</extension>

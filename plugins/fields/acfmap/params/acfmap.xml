@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="fieldparams">
+		<fieldset name="fieldparams">
+			<field name="provider" type="NRImagesSelector"
+				images='[{"key": "OpenStreetMap", "label": "NR_OPENSTREETMAP", "url": "https://www.tassos.gr/images/apps/openstreetmap.png"}, {"key": "GoogleMap", "label": "NR_GOOGLEMAPS", "url": "https://www.tassos.gr/images/apps/google-maps.png"}, {"key": "BingMap", "label": "NR_BINGMAPS", "url": "https://www.tassos.gr/images/apps/bing-maps.png"}]'
+				columns="3"
+				default="OpenStreetMap"
+				label="ACF_MAP_PROVIDER"
+				description="ACF_MAP_PROVIDER_DESC"
+				mode="links"
+				image_width="100px"
+				width="500px"
+			/>
+			
+			
+		    <field name="@map_maptype" type="nr_pro"
+				label="ACF_MAP_TYPE"
+				description="ACF_MAP_TYPE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+			/>
+			<field name="@scale" type="nr_pro"
+				label="ACF_MAP_SCALE"
+				description="ACF_MAP_SCALE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+			/>
+			
+
+            <field type="spacer" name="label"
+				label="NR_FRONTEND"
+				class="acf"
+			/>
+			<field name="width_control" type="NRResponsiveControl"
+				label="ACF_MAP_WIDTH"
+				description="ACF_MAP_WIDTH_DESC">
+                <subform>
+                    <field name="width" type="nrnumber"
+						class="input-small"
+						default="400"
+						hint="400"
+						min="1"
+						addon="px"
+					/>
+                </subform>
+			</field>
+			<field name="height_control" type="NRResponsiveControl"
+				label="ACF_MAP_HEIGHT"
+				description="ACF_MAP_HEIGHT_DESC">
+                <subform>
+                    <field name="height" type="nrnumber"
+						class="input-small"
+						default="350"
+						hint="350"
+						min="1"
+						addon="px"
+					/>
+                </subform>
+			</field>
+			<field name="zoom_level" type="radio"
+				label="ACF_MAP_MAP_CENTER"
+				description="ACF_MAP_MAP_CENTER_DESC"
+				default="fitbounds"
+				class="btn-group btn-group-yesno">
+					<option value="preset">NR_CUSTOM</option>
+					<option value="fitbounds">ACF_MAP_FIT_BOUNDS</option>
+			</field>
+			<field name="map_center" type="TFAddressLookup"
+				label="ACF_MAP_SET_MAP_CENTER"
+				description="ACF_MAP_SET_MAP_CENTER_DESC"
+				showon="zoom_level:preset"
+			/>
+			<field name="zoom" type="nrnumber"
+				label="ACF_MAP_ZOOM_LEVEL"
+				description="ACF_MAP_ZOOM_LEVEL_DESC"
+				default="4"
+				min="0"
+				showon="zoom_level:preset"
+			/>
+			<field name="enable_info_window" type="NRToggle"
+				label="ACF_MAP_ENABLE_INFO_WINDOW"
+				description="ACF_MAP_ENABLE_INFO_WINDOW_DESC"
+				checked="true"
+			/>
+			
+			
+			<field name="@unlimited_map_markers" type="nr_pro"
+				label="ACF_MAP_UNLIMITED_MARKERS"
+				description="ACF_MAP_UNLIMITED_MARKERS_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+			/>
+		    <field name="@markerImage" type="nr_pro"
+				label="ACF_MAP_MARKER_IMAGE"
+				description="ACF_MAP_MARKER_IMAGE_DESC"
+				url="https://www.tassos.gr/joomla-extensions/advanced-custom-fields"
+			/>
+			
+            <field type="spacer" name="label2"
+				label="NR_BACKEND"
+				class="acf"
+			/>
+			<field name="show_sidebar" type="nrtoggle"
+				label="ACF_MAP_SHOW_SIDEBAR"
+				description="ACF_MAP_SHOW_SIDEBAR_DESC"
+				checked="true"
+			/>
+			<field name="default_coords" type="text"
+				label="ACF_MAP_DEFAULT_COORDS"
+				description="ACF_MAP_DEFAULT_COORDS_DESC"
+				hint="36.891319,27.283480"
+			/>
+		</fieldset>
+	</fields>
+</form>
+
